@@ -11,18 +11,23 @@ void PrintArray(double[,] matrix, int a, int b)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            if (i==a && j==b)
+            if (i == a && j == b)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
+            }
+            else if (i == a || j == b)
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
             }
             else
             {
                 Console.ForegroundColor = ConsoleColor.White;
             }
-            Console.Write($"{matrix[i, j],8}  ");            
+            Console.Write($"{matrix[i, j],8}  ");
         }
         Console.WriteLine();
     }
+    Console.ForegroundColor = ConsoleColor.White;
 }
 
 void FillArray()
