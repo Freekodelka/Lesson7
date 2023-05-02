@@ -3,7 +3,7 @@
 и возвращает значение этого элемента или же указание, 
 что такого элемента нет. */
 
-double[,] matrix = new double[10, 10];
+double[,] matrix = new double[10, 4];
 
 void PrintArray(double[,] matrix, int a, int b)
 {
